@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'BAUHAUS';
+    src: url(BAHAUS.TTF);
+}
+
+html, body{
+    overflow: hidden;
+    height: 100%;
+    background-size: cover;
+    background: linear-gradient(60deg,aqua 0%,blue 80%);
+}
+
+h1{
+    font-size: 4rem;
+    font-family:'Segoe UI';
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 2rem;
+    font-family: 'BAUHAUS';
+    text-align: center;
+}
+
