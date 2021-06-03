@@ -3,11 +3,22 @@
     src: url(BAHAUS.TTF);
 }
 
+@font-face {
+    font-family: 'Fixedsys';
+    src: url(Fixedsys.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(Ubuntu.ttf);
+}
+
 html, body{
     overflow: hidden;
     height: 100%;
     background-size: cover;
-    background: linear-gradient(60deg,aqua 0%,blue 80%);
+    background: linear-gradient(60deg,#00ffff 0%,#0000ff 80%);
+    
 }
 
 h1{
@@ -23,3 +34,35 @@ p{
     text-align: center;
 }
 
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.card{
+    border:solid;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: hsla(135, 87%, 42%, 0.5);
+}
+
+.card h2{
+    font-family:'Fixedsys';
+    margin:0;
+    margin-bottom: 1em;
+}
+
+.card .link{
+    display: inline;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.card .link *{
+    vertical-align: middle;
+    padding: 1mm;
+    color:#dbdbdb;
+    font-family: 'Ubuntu';
+}
