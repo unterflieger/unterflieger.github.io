@@ -13,80 +13,88 @@
     src: url(Ubuntu.ttf);
 }
 
-html, body{
+html,
+body {
     /* overflow: hidden; */
     height: 100%;
     background-size: cover;
-    background: linear-gradient(60deg,#00ffff 0%,#0000ff 80%);
+    background: linear-gradient(60deg, #00ffff 0%, #0000ff 80%);
     margin: 0;
-    
 }
 
-h1{
+h1 {
     font-size: 4rem;
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     text-align: center;
     text-decoration: underline;
     margin: 0;
 }
 
-p{
+p {
     font-size: 2rem;
     font-family: 'BAUHAUS';
     text-align: center;
 }
 
-
-main{
+main {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-@media screen and (max-width:810px){
-    main{
+@media screen and (max-width:975px) {
+    main {
         grid-template-columns: none;
     }
-    h1{
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:810px) {
+    main {
+        grid-template-columns: none;
+    }
+    h1 {
         font-size: 3rem;
     }
 }
 
-@media screen and (max-width:300px){
-    main{
+@media screen and (max-width:300px) {
+    main {
         grid-template-columns: none;
         max-height: 300px;
     }
-    h1{
+    h1 {
         font-size: 1rem;
     }
-    p{
+    p {
         font-size: 0.7rem;
     }
 }
 
-.card{
-    border:solid;
+.card {
+    border: solid;
     margin: 1em;
     padding: 1em;
     text-align: center;
     background-color: hsla(135, 87%, 42%, 0.5);
 }
 
-.card h2{
-    font-family:'Fixedsys';
-    margin:0;
+.card h2 {
+    font-family: 'Fixedsys';
+    margin: 0;
     margin-bottom: 1em;
 }
 
-.card .link{
+.card .link {
     display: inline;
     font-size: 1.5em;
     text-decoration: none;
 }
 
-.card .link *{
+.card .link * {
     vertical-align: middle;
     padding: 1mm;
-    color:#dbdbdb;
+    color: #dbdbdb;
     font-family: 'Ubuntu';
 }
