@@ -14,10 +14,11 @@
 }
 
 html, body{
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     background-size: cover;
     background: linear-gradient(60deg,#00ffff 0%,#0000ff 80%);
+    margin: 0;
     
 }
 
@@ -26,6 +27,7 @@ h1{
     font-family:'Segoe UI';
     text-align: center;
     text-decoration: underline;
+    margin: 0;
 }
 
 p{
@@ -37,7 +39,29 @@ p{
 
 main{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (max-width:810px){
+    main{
+        grid-template-columns: none;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:300px){
+    main{
+        grid-template-columns: none;
+        max-height: 300px;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
 }
 
 .card{
